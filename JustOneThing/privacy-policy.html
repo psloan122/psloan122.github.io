@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just One Thing - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fafafa;
+            padding: 24px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .effective {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            font-size: 16px;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        strong { font-weight: 600; }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .section {
+            background: #fff;
+            border: 1px solid #e5e5e7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e7;
+            font-size: 14px;
+            color: #6e6e73;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Just One Thing</h1>
+<p class="effective">Privacy Policy &mdash; Effective June 2026</p>
+
+<p>Just One Thing is designed to help you get unstuck. Your privacy matters, and this policy explains exactly what data we collect, where it goes, and what stays on your device.</p>
+
+<div class="section">
+    <h2>What stays on your device</h2>
+    <p>The following data is stored locally on your device and is <strong>never uploaded</strong> to any server:</p>
+    <ul>
+        <li>Your personal tasks (text and metadata)</li>
+        <li>Photos you take or select (before/after images), unless you explicitly choose to share them to the community feed or send them for AI analysis</li>
+        <li>Calendar data and schedule information</li>
+        <li>Daily check-in history (capacity scores, affect labels)</li>
+        <li>Your profile information (name, birthday)</li>
+        <li>Completion times and dread ledger entries</li>
+    </ul>
+    <p>Just One Thing is offline-first. Your personal data lives on your phone.</p>
+</div>
+
+<div class="section">
+    <h2>What is sent to Anthropic (Claude AI)</h2>
+    <p>When you use AI-powered features, the following data is sent to Anthropic's API for processing:</p>
+    <ul>
+        <li><strong>Task text</strong> &mdash; for triage, reframing, decomposition, and if-then plan generation</li>
+        <li><strong>Photos</strong> &mdash; for task analysis, <strong>only with your explicit consent</strong> during onboarding</li>
+    </ul>
+    <p>Anthropic processes this data according to their <a href="https://www.anthropic.com/privacy">privacy policy</a>. We do not send any personal identifiers, names, or profile information to Anthropic.</p>
+</div>
+
+<div class="section">
+    <h2>What is stored in Supabase</h2>
+    <p>We store <strong>anonymous, aggregate completion data only</strong> to help improve task estimates for all users. This includes:</p>
+    <ul>
+        <li><code>taxonomy_node_id</code> &mdash; the category of task completed</li>
+        <li><code>dread_days</code> &mdash; how long the task was postponed</li>
+        <li><code>actual_min</code> &mdash; how long the task actually took</li>
+    </ul>
+    <p>This data contains <strong>no user ID</strong>, <strong>no device identifier</strong>, and <strong>no personally identifiable information</strong>. The anonymous table (<code>task_completions_anon</code>) cannot be traced back to any individual.</p>
+    <p>If you choose to post a completion to the community feed, the post (your chosen display name, the task category, timing stats, and any photos you explicitly opt to include) is stored in Supabase so other users can see it. You can delete your posts at any time from Settings.</p>
+</div>
+
+<div class="section">
+    <h2>Music integration (Spotify and Apple Music)</h2>
+    <p>If you connect Spotify, the app stores your Spotify access and refresh tokens securely in the iOS Keychain on your device. They are used only to play music during tasks and are deleted when you disconnect or delete your data. Apple Music playback uses Apple's MusicKit and requires your permission; we never see or store your Apple Music account credentials. We do not collect your listening history.</p>
+</div>
+
+<div class="section">
+    <h2>What we do not do</h2>
+    <ul>
+        <li>We do <strong>not</strong> sell your data</li>
+        <li>We do <strong>not</strong> serve ads</li>
+        <li>We do <strong>not</strong> track users across apps or websites</li>
+        <li>We do <strong>not</strong> collect analytics or usage telemetry</li>
+        <li>We do <strong>not</strong> share personal data with third parties</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Data collected on device</h2>
+    <p>The app collects the following data, all of which remains on your device:</p>
+    <ul>
+        <li><strong>Task text</strong> &mdash; what you type or dictate as your task</li>
+        <li><strong>Photos</strong> (optional) &mdash; before and after images of tasks</li>
+        <li><strong>Capacity scores</strong> &mdash; your daily energy self-assessment</li>
+        <li><strong>Affect labels</strong> &mdash; how you describe your current feeling</li>
+        <li><strong>Completion times</strong> &mdash; how long tasks actually take</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Data deletion</h2>
+    <p>You can delete all your data at any time:</p>
+    <p><strong>Settings &gt; Delete All Data</strong></p>
+    <p>This permanently removes all tasks, check-ins, photos, profile information, and progress from your device. It also resets the app to its initial onboarding state. This action cannot be undone.</p>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at:</p>
+    <p><a href="mailto:psloan122@gmail.com">psloan122@gmail.com</a></p>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 Just One Thing. All rights reserved.</p>
+</div>
+
+</body>
+</html>
