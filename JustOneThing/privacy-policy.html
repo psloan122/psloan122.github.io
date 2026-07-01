@@ -101,9 +101,11 @@
         <li><code>taxonomy_node_id</code> &mdash; the category of task completed</li>
         <li><code>dread_days</code> &mdash; how long the task was postponed</li>
         <li><code>actual_min</code> &mdash; how long the task actually took</li>
+        <li><code>predicted_min</code> &mdash; how long you expected it to take</li>
+        <li><code>capacity_at_completion</code> &mdash; your energy level that day</li>
     </ul>
     <p>This data contains <strong>no user ID</strong>, <strong>no device identifier</strong>, and <strong>no personally identifiable information</strong>. The anonymous table (<code>task_completions_anon</code>) cannot be traced back to any individual.</p>
-    <p>If you choose to post a completion to the community feed, the post (your chosen display name, the task category, timing stats, and any photos you explicitly opt to include) is stored in Supabase so other users can see it. You can delete your posts at any time from Settings.</p>
+    <p>If you choose to post a completion to the community feed, the post (your chosen display name, the task category, timing stats, and any photos you explicitly opt to include) is stored in Supabase so other users can see it. Community posts carry a random, anonymous device identifier used only so you can manage and delete your own posts; it is not linked to your name, email, or Apple ID. You can delete your posts at any time from Settings.</p>
 </div>
 
 <div class="section">
@@ -138,7 +140,7 @@
     <h2>Data deletion</h2>
     <p>You can delete all your data at any time:</p>
     <p><strong>Settings &gt; Delete All Data</strong></p>
-    <p>This permanently removes all tasks, check-ins, photos, profile information, and progress from your device. It also resets the app to its initial onboarding state. This action cannot be undone.</p>
+    <p>This permanently removes all tasks, check-ins, photos, profile information, and progress from your device, and deletes your community posts from our servers. It also resets the app to its initial onboarding state. This action cannot be undone. One exception: an anonymous timestamp recording when your free trial started is kept so that deleting data cannot be used to restart a trial; it contains no personal information.</p>
 </div>
 
 <div class="section">
